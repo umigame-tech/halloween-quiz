@@ -128,9 +128,28 @@ export function Explanation() {
                 const isUserChoice =
                   userAnswer?.selectedChoice === choice.choice_text;
                 const isCorrect = choice.is_correct;
-                const bgColor = isCorrect
-                  ? "bg-orange-500"
-                  : "bg-gray-700 bg-opacity-80";
+
+                // 4つのパターンを区別
+                let bgColor = "";
+                let label = "";
+
+                if (isCorrect && isUserChoice) {
+                  // 正解かつユーザーが選択
+                  bgColor = "bg-green-500";
+                  label = " (あなたの回答・正解)";
+                } else if (isCorrect && !isUserChoice) {
+                  // 正解かつユーザーが選択していない
+                  bgColor = "bg-orange-500";
+                  label = " (正解)";
+                } else if (!isCorrect && isUserChoice) {
+                  // 不正解かつユーザーが選択
+                  bgColor = "bg-red-500";
+                  label = " (あなたの回答)";
+                } else {
+                  // 不正解かつユーザーが選択していない
+                  bgColor = "bg-gray-700 bg-opacity-80";
+                  label = "";
+                }
 
                 return (
                   <button
@@ -139,8 +158,7 @@ export function Explanation() {
                     className={`w-full ${bgColor} text-white font-bold py-4 px-6 rounded-xl text-lg shadow-lg`}
                   >
                     {choice.choice_text}
-                    {isUserChoice && !isCorrect && " (あなたの回答)"}
-                    {isUserChoice && isCorrect && " (あなたの回答・正解)"}
+                    {label}
                   </button>
                 );
               })}

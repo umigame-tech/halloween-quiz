@@ -1,0 +1,1118 @@
+[
+  {
+    "group": {
+      "id": "g001",
+      "name": "初級レベル",
+      "description": "ハロウィンの基本を学ぼう!誰でも知っている定番の知識からスタート"
+    },
+    "questions": [
+      {
+        "id": "q001",
+        "question_text": "ハロウィンは毎年何月何日に行われるでしょうか?",
+        "explanation": "正解:10月31日\n\nハロウィンは毎年10月31日に行われる行事です。古代ケルト人の収穫祭「サウィン祭」が起源とされ、この日は夏の終わりを意味し、死者の霊が戻ってくると信じられていました。",
+        "choices": [
+          {
+            "choice_text": "10月31日",
+            "is_correct": true,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "10月1日",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "11月1日",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "10月25日",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q002",
+        "question_text": "ハロウィンでかぼちゃをくり抜いて作るランタンを何と呼ぶでしょうか?",
+        "explanation": "正解:ジャック・オー・ランタン\n\n「ジャック・オー・ランタン」は、かぼちゃをくり抜いて顔を彫り、中にろうそくを灯したランタンです。アイルランドの伝説に登場する「ジャック」という男の物語に由来しており、悪霊を追い払う魔除けの意味があります。",
+        "choices": [
+          {
+            "choice_text": "パンプキン・ライト",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ジャック・オー・ランタン",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ハロウィン・ランプ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "ゴースト・キャンドル",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q003",
+        "question_text": "子どもたちが仮装して家々を回り、お菓子をもらう時に言う言葉は?",
+        "explanation": "正解:トリック・オア・トリート\n\n「Trick or Treat(トリック・オア・トリート)」は「お菓子をくれないといたずらしちゃうぞ!」という意味です。この習慣は中世ヨーロッパの「ソウリング」という、貧しい人々が食べ物をもらって歩いた風習に由来すると言われています。",
+        "choices": [
+          {
+            "choice_text": "ハッピー・ハロウィン",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "トリック・オア・トリート",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ギブ・ミー・キャンディ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "スイート・オア・スケア",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q004",
+        "question_text": "ハロウィンのシンボルカラーは主に何色と何色でしょうか?",
+        "explanation": "正解:オレンジと黒\n\nオレンジは秋の収穫とかぼちゃを、黒は夜や死を象徴しています。この2色の組み合わせがハロウィンの伝統的なカラーとして定着し、装飾や衣装に広く使われています。",
+        "choices": [
+          {
+            "choice_text": "赤と白",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "紫と緑",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "オレンジと黒",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "黄色と青",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q005",
+        "question_text": "ハロウィンに魔女が乗っているものは何でしょうか?",
+        "explanation": "正解:ほうき\n\n魔女がほうきに乗って空を飛ぶというイメージは、中世ヨーロッパの魔女伝説に由来します。ほうきは魔女の象徴的なアイテムとして、ハロウィンの装飾や仮装に欠かせない要素となっています。",
+        "choices": [
+          {
+            "choice_text": "杖",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ほうき",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "絨毯",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "傘",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q006",
+        "question_text": "ハロウィンでよく見かける、白い布をかぶった姿の妖怪は?",
+        "explanation": "正解:おばけ(ゴースト)\n\n白いシーツをかぶったおばけは、ハロウィンの最も基本的な仮装の一つです。シンプルながら効果的で、死者の霊を表現しています。この姿は欧米の幽霊のステレオタイプとして広く認識されています。",
+        "choices": [
+          {
+            "choice_text": "魔女",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "おばけ",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ゾンビ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "吸血鬼",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q007",
+        "question_text": "ハロウィンの起源となった古代の民族は?",
+        "explanation": "正解:ケルト人\n\nハロウィンは古代ケルト人の祭り「サウィン(Samhain)」が起源です。ケルト人は現在のアイルランドやスコットランドに住んでいた民族で、10月31日を1年の終わりとし、この夜に死者の霊が戻ってくると信じていました。",
+        "choices": [
+          {
+            "choice_text": "ローマ人",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ケルト人",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ギリシャ人",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "バイキング",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q008",
+        "question_text": "ハロウィンに関連する動物で、不吉の象徴とされる黒い動物は?",
+        "explanation": "正解:黒猫\n\n黒猫は中世ヨーロッパで魔女の使い魔とされ、不吉の象徴とされてきました。ハロウィンでは魔女とセットで描かれることが多く、ミステリアスな雰囲気を醸し出す重要なモチーフです。",
+        "choices": [
+          {
+            "choice_text": "黒猫",
+            "is_correct": true,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "黒犬",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "カラス",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "コウモリ",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q009",
+        "question_text": "ハロウィンで子どもたちがもらうものは主に何でしょうか?",
+        "explanation": "正解:お菓子\n\nトリック・オア・トリートで子どもたちがもらうのはキャンディやチョコレートなどのお菓子です。この習慣により、ハロウィンは子どもたちにとって楽しみなイベントとなり、お菓子メーカーにとっても重要な商機となっています。",
+        "choices": [
+          {
+            "choice_text": "おもちゃ",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "お金",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "お菓子",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "花",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q010",
+        "question_text": "ハロウィンパーティーで人々がすることと言えば?",
+        "explanation": "正解:仮装する\n\n仮装はハロウィンの最も重要な要素の一つです。元々は悪霊から身を守るために怖い格好をしたのが始まりとされています。現代では魔女、ゾンビ、吸血鬼、アニメキャラクターなど、様々な衣装で楽しまれています。",
+        "choices": [
+          {
+            "choice_text": "花火を見る",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "仮装する",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "プレゼント交換",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "初詣に行く",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": {
+      "id": "g002",
+      "name": "中級レベル",
+      "description": "もう一歩踏み込んだハロウィンの知識に挑戦!歴史や文化的背景を学ぼう"
+    },
+    "questions": [
+      {
+        "id": "q011",
+        "question_text": "ジャック・オー・ランタンが最初に作られていた野菜は何でしょうか?",
+        "explanation": "正解:カブ\n\nジャック・オー・ランタンは元々アイルランドでカブやルタバガ(スウェーデンカブ)をくり抜いて作られていました。アイルランド移民がアメリカに渡った際、入手しやすく大きなかぼちゃを使うようになり、現在の形になりました。",
+        "choices": [
+          {
+            "choice_text": "かぼちゃ",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "カブ",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "じゃがいも",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "大根",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q012",
+        "question_text": "ハロウィンの語源となった言葉「All Hallows' Eve」の意味は?",
+        "explanation": "正解:諸聖人の日の前夜\n\n「All Hallows' Eve」は「諸聖人の日(All Hallows' Day/All Saints' Day)の前夜」という意味です。11月1日の諸聖人の日の前夜である10月31日を指し、これが短縮されて「Halloween」となりました。キリスト教の祝日と古代ケルトの祭りが融合した行事です。",
+        "choices": [
+          {
+            "choice_text": "悪魔の夜",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "収穫祭の夜",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "諸聖人の日の前夜",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "死者の日",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q013",
+        "question_text": "古代ケルト人の収穫祭「サウィン」で、新年の始まりとされていたのはいつ?",
+        "explanation": "正解:11月1日\n\n古代ケルト人は11月1日を新年の始まりとしていました。10月31日は1年の最後の日であり、夏の終わりと冬の始まりを意味する境界の日でした。この日には現世と霊界の境界が薄くなり、死者の霊が戻ってくると信じられていました。",
+        "choices": [
+          {
+            "choice_text": "1月1日",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "10月31日",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "11月1日",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "12月25日",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q014",
+        "question_text": "メキシコで10月31日から11月2日にかけて行われる、死者を祀る祭りは?",
+        "explanation": "正解:死者の日(ディア・デ・ムエルトス)\n\n「死者の日(Día de Muertos)」はメキシコの伝統的な祭りで、ハロウィンと時期が重なりますが起源は異なります。先祖の霊を歓迎し、カラフルな骸骨の装飾やマリーゴールドの花、特別な祭壇を作って死者を偲びます。ユネスコの無形文化遺産にも登録されています。",
+        "choices": [
+          {
+            "choice_text": "カーニバル",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "死者の日",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "サン・フェルミン祭",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "イースター",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q015",
+        "question_text": "吸血鬼ドラキュラ伯爵のモデルとなった歴史上の人物は?",
+        "explanation": "正解:ヴラド・ツェペシュ\n\nブラム・ストーカーの小説「ドラキュラ」のモデルは、15世紀のワラキア公国(現ルーマニア)の君主ヴラド3世(ヴラド・ツェペシュ)と言われています。「串刺し公」として恐れられた残虐な支配者でしたが、同時に祖国を守った英雄でもありました。ハロウィンの人気キャラクターとして定着しています。",
+        "choices": [
+          {
+            "choice_text": "ヴラド・ツェペシュ",
+            "is_correct": true,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ナポレオン",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "リチャード3世",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "イワン雷帝",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q016",
+        "question_text": "ハロウィンに関連する「ボビング・フォー・アップル」とはどんなゲーム?",
+        "explanation": "正解:水に浮かべたりんごを手を使わずに口でつかむゲーム\n\n「ボビング・フォー・アップル(Apple Bobbing)」は、水を張った桶にりんごを浮かべ、手を使わずに口だけでりんごを取るゲームです。古代ローマの収穫祭に由来するとされ、若者たちの恋占いとしても行われていました。ハロウィンパーティーの定番ゲームです。",
+        "choices": [
+          {
+            "choice_text": "りんごを投げて的に当てるゲーム",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "水に浮かべたりんごを手を使わずに口でつかむゲーム",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "りんごを早食いするゲーム",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "目隠ししてりんごを探すゲーム",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q017",
+        "question_text": "ハロウィンでよく飾られる「案山子(かかし)」は何を象徴しているでしょうか?",
+        "explanation": "正解:収穫と秋の季節\n\n案山子は収穫の時期と秋の季節を象徴しています。農業における案山子の役割と、秋の収穫祭というハロウィンの起源が結びつき、装飾として人気になりました。わらで作られた素朴な姿が、ハロウィンのノスタルジックな雰囲気を演出します。",
+        "choices": [
+          {
+            "choice_text": "死者の霊",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "悪魔",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "収穫と秋の季節",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "魔女の使い魔",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q018",
+        "question_text": "アメリカで最初にハロウィンパレードが開催された都市は?",
+        "explanation": "正解:ニューヨーク\n\n世界最大規模のハロウィンパレード「ビレッジ・ハロウィン・パレード」は1974年にニューヨークのグリニッジ・ビレッジで始まりました。現在では毎年5万人以上が参加し、200万人以上が観覧する大イベントに成長しています。",
+        "choices": [
+          {
+            "choice_text": "ロサンゼルス",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ニューヨーク",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ボストン",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "シカゴ",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q019",
+        "question_text": "ハロウィンに魔女が大鍋で作っているとされるものは?",
+        "explanation": "正解:魔法の薬(ポーション)\n\n魔女が大鍋で調合しているのは魔法の薬やポーションです。中世の魔女伝説では、魔女が様々な材料を大鍋で煮て呪文を唱えながら薬を作るというイメージが定着しました。シェイクスピアの「マクベス」に登場する三人の魔女のシーンが有名です。",
+        "choices": [
+          {
+            "choice_text": "スープ",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "魔法の薬",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "キャンディ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "染料",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q020",
+        "question_text": "日本で初めて大規模なハロウィンイベントが行われたのはどこ?",
+        "explanation": "正解:東京ディズニーランド\n\n日本で最初に大規模なハロウィンイベントを開催したのは東京ディズニーランドです。1997年に園内パレードとして始まり、2000年から本格的なハロウィンイベントとして定着しました。これをきっかけに日本でもハロウィンが広く認知されるようになりました。現在では渋谷や原宿など、各地で盛大に祝われています。",
+        "choices": [
+          {
+            "choice_text": "ユニバーサル・スタジオ・ジャパン",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "東京ディズニーランド",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "渋谷スクランブル交差点",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "原宿竹下通り",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": {
+      "id": "g003",
+      "name": "上級レベル",
+      "description": "ハロウィンマニア向けの難問!マニアックな知識と深い歴史的背景に挑戦"
+    },
+    "questions": [
+      {
+        "id": "q021",
+        "question_text": "古代ケルトの暦で、サウィン祭が属していた季節区分は?",
+        "explanation": "正解:冬の始まり\n\n古代ケルトの暦では1年を4つの季節に分け、サウィン(10月31日~11月1日)は冬の始まりを示す重要な祭りでした。ケルト暦では夏(Samhradh)と冬(Geimhreadh)が主要な季節で、サウィンは夏の終わりと冬の始まりの境界を意味し、この境界の時期に霊界との扉が開くと信じられていました。",
+        "choices": [
+          {
+            "choice_text": "秋の終わり",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "冬の始まり",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "収穫の季節",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "年の中間",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q022",
+        "question_text": "アイルランドの伝説で、ジャック・オー・ランタンの元となった「ケチなジャック」が悪魔と交わした約束とは?",
+        "explanation": "正解:ジャックの魂を奪わないという約束\n\n伝説によると、ケチなジャックは悪魔を騙して木に登らせ、木の幹に十字架を刻んで降りられなくしました。解放する条件として、悪魔にジャックの魂を決して奪わないと約束させました。しかし死後、悪行のため天国にも地獄にも行けず、悪魔から貰った燃える石炭をカブに入れて永遠にさまよう羽目になったのです。",
+        "choices": [
+          {
+            "choice_text": "7年間の幸運を与える約束",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ジャックの魂を奪わないという約束",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "大金を与える約束",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "不老不死にする約束",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q023",
+        "question_text": "中世のキリスト教会が11月1日を「諸聖人の日」に定めたのは何世紀?",
+        "explanation": "正解:8世紀\n\n教皇グレゴリウス3世が8世紀(731年頃)に11月1日を諸聖人の日として定めました。その後、教皇グレゴリウス4世が835年に正式に全教会で祝うことを命じました。この日付の選定には、異教徒のサウィン祭をキリスト教の祝日に取り込むという意図があったとされています。",
+        "choices": [
+          {
+            "choice_text": "5世紀",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "8世紀",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "11世紀",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "13世紀",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q024",
+        "question_text": "「トリック・オア・トリート」の習慣の直接的な起源とされる中世ヨーロッパの風習は?",
+        "explanation": "正解:ソウリング(Souling)\n\nソウリングは中世の「諸魂日(All Souls' Day、11月2日)」に行われた風習で、貧しい人々が富裕層の家を訪ね、死者の魂のために祈る代わりに「ソウルケーキ」という特別なケーキをもらいました。この「食べ物と引き換えに何かをする」という概念が現代のトリック・オア・トリートの起源とされています。",
+        "choices": [
+          {
+            "choice_text": "マミング(Mumming)",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ソウリング(Souling)",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ワッセイリング(Wassailing)",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "ガイジング(Guising)",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q025",
+        "question_text": "ハロウィンのシンボルとして使われる満月だが、実際に10月31日が満月になる頻度は?",
+        "explanation": "正解:約19年に1度\n\n10月31日に満月が来るのは非常に珍しく、平均して約19年に1度です。これはメトン周期(太陰太陽周期)と呼ばれる天文学的なサイクルによるものです。直近では2020年10月31日に満月(ブルームーン)があり、次は2039年、2058年と予測されています。ハロウィンの満月は「ハンターズムーン」とも呼ばれます。",
+        "choices": [
+          {
+            "choice_text": "毎年",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "約4年に1度",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "約19年に1度",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "約50年に1度",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q026",
+        "question_text": "スコットランドとアイルランドの伝統的なハロウィン占いで、ナッツを火にくべて行う占いは何を占うもの?",
+        "explanation": "正解:恋愛運や結婚相手\n\n「ナット・クラック・ナイト」と呼ばれるこの占いは、若い男女がヘーゼルナッツやクルミに自分と好きな人の名前をつけて火にくべ、その燃え方で恋の行方を占いました。ナッツが静かに燃えれば良縁、はじけたり飛び出したりすれば破局を意味するとされました。この風習は18〜19世紀のケルト文化圏で広く行われていました。",
+        "choices": [
+          {
+            "choice_text": "来年の収穫量",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "恋愛運や結婚相手",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "寿命",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "金運",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q027",
+        "question_text": "アメリカで「ハロウィンの首都」と呼ばれ、大規模な祝祭が行われる都市は?",
+        "explanation": "正解:セイラム(マサチューセッツ州)\n\nマサチューセッツ州セイラムは1692年の「セイラム魔女裁判」で有名な都市で、「ハロウィンの首都」「魔女の街」として知られています。毎年10月には「ホーンテッド・ハプニングス」という1ヶ月にわたるハロウィンフェスティバルが開催され、世界中から100万人以上の観光客が訪れます。魔女博物館や魔女裁判記念館などの施設もあります。",
+        "choices": [
+          {
+            "choice_text": "ニューオーリンズ",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "セイラム",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "サンフランシスコ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "フィラデルフィア",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q028",
+        "question_text": "ハロウィンで配られるキャンディコーンは、もともと何という名前で売られていた?",
+        "explanation": "正解:チキンフィード\n\nキャンディコーンは1880年代にジョージ・レニンガーによって発明され、当初は「チキンフィード(鶏の餌)」という名前で販売されていました。当時のアメリカは農業社会で、トウモロコシ粒の形をしたこのキャンディが鶏の餌を連想させたためです。箱にも雄鶏の絵が描かれていました。ハロウィンと結びついたのは1950年代以降です。",
+        "choices": [
+          {
+            "choice_text": "オータムデライト",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "チキンフィード",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ハーベストトリート",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "コーントライアングル",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q029",
+        "question_text": "ルーマニアのトランシルヴァニア地方で、ハロウィンの時期に開催されるドラキュラ関連のイベントが行われる城は?",
+        "explanation": "正解:ブラン城\n\nブラン城は「ドラキュラ城」として知られ、ブラム・ストーカーの小説に登場する城のモデルの一つとされています。ヴラド・ツェペシュとの直接的な関連は薄いものの、ゴシック様式の外観と歴史的雰囲気から観光名所となっています。ハロウィンには特別なイベントが開催され、世界中からドラキュラファンが集まります。",
+        "choices": [
+          {
+            "choice_text": "ペレシュ城",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "フネドアラ城",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ブラン城",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "コルヴィン城",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q030",
+        "question_text": "アメリカでハロウィンが全国的な行事として定着したのは、ある社会的要因がきっかけとなった。それは何?",
+        "explanation": "正解:ベビーブーム世代の成長\n\n1950年代、第二次世界大戦後のベビーブームで子どもの人口が急増し、家族向けの安全なハロウィン祝祭が郊外住宅地で広まりました。企業もこの市場に注目し、キャンディやコスチュームの大量生産が始まり、メディアも取り上げるようになって全国的な行事として定着しました。それまでハロウィンは主にアイルランド系移民のコミュニティで祝われていた地域的な行事でした。",
+        "choices": [
+          {
+            "choice_text": "禁酒法の廃止",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ベビーブーム世代の成長",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "テレビの普及",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "経済恐慌からの回復",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": {
+      "id": "g004",
+      "name": "超上級レベル",
+      "description": "ハロウィン研究者レベルの超難問!初見での正解は困難だが、調べることで深い学びが得られる"
+    },
+    "questions": [
+      {
+        "id": "q031",
+        "question_text": "古代ケルトのドルイド僧がサウィン祭で焚いた「聖なる火」に使われた特定の木の組み合わせは?",
+        "explanation": "正解:オークとハシバミ\n\nドルイド僧は「ティンネ(Tinne)」と呼ばれる聖なる火を焚く際、オーク(樫)とハシバミ(榛)の木を使いました。オークは「森の王」として神聖視され、ハシバミは知恵と予言の象徴でした。この火は全ての家庭の炉火を一度消してから再点火する儀式に使われ、コミュニティの浄化と再生を意味しました。ケルトの樹木暦(Ogham)でもこの2つの木は特別な位置を占めています。",
+        "choices": [
+          {
+            "choice_text": "オークとハシバミ",
+            "is_correct": true,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "松と杉",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "柳とトネリコ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "イチイとヤドリギ",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q032",
+        "question_text": "1584年にスコットランドで出版された、ハロウィンに関する最古の文献記録の一つとされる書物は?",
+        "explanation": "正解:『Daemonologie』(悪魔学)\n\nスコットランド王ジェームズ6世(後のイングランド王ジェームズ1世)が著した『Daemonologie』は、魔女や悪魔、超自然現象について論じた書物です。この中でハロウィン前後の魔女の活動や民間伝承について言及されており、後のハロウィン文化や魔女狩りに大きな影響を与えました。この王は後にシェイクスピアの『マクベス』の魔女のシーンにもインスピレーションを与えたとされています。",
+        "choices": [
+          {
+            "choice_text": "『Malleus Maleficarum』",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "『Daemonologie』",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "『The Discovery of Witchcraft』",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "『Compendium Maleficarum』",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q033",
+        "question_text": "ケルト神話でサウィン祭の期間中に開くとされる、異界への入口「シー(Sídhe)」の最も有名な場所は?",
+        "explanation": "正解:ニューグレンジ(Brú na Bóinne)\n\nアイルランドのミース州にあるニューグレンジは、紀元前3200年頃に建造された巨大な古墳で、ケルト神話では妖精や神々が住む異界「シー」への入口とされました。サウィン祭の時期には異界との境界が最も薄くなり、この場所で超自然的な出来事が起こると信じられていました。冬至には通路の奥の部屋まで太陽光が差し込む構造になっており、天文学的にも重要な遺跡です。ユネスコ世界遺産に登録されています。",
+        "choices": [
+          {
+            "choice_text": "タラの丘",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ニューグレンジ",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "ストーンヘンジ",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "グラストンベリー・トー",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q034",
+        "question_text": "中世スコットランドの「ガイジング(Guising)」で、子どもたちがお菓子をもらうために披露しなければならなかったものは?",
+        "explanation": "正解:芸(歌、詩、ジョーク、楽器演奏など)\n\nガイジングは16世紀のスコットランドで始まった習慣で、仮装した子どもたちは単にお菓子をねだるのではなく、歌を歌ったり、詩を暗唱したり、ジョークを言ったり、楽器を演奏したりして「対価」を得る必要がありました。これは「Trick or Treat」よりも古い伝統で、パフォーマンスと引き換えに報酬を得るという概念が含まれていました。この習慣はアイルランドやウェールズにも広がり、現代のハロウィンにも影響を与えています。",
+        "choices": [
+          {
+            "choice_text": "家の掃除",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "芸(歌、詩、ジョーク、楽器演奏など)",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "お祈り",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "薪割り",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q035",
+        "question_text": "1919年にアメリカで発生した「ハロウィン・パニック」の原因となった新聞記事の内容は?",
+        "explanation": "正解:お菓子に毒針や毒物が混入されているという(誤報だった)警告\n\n1919年、複数の新聞がハロウィンのお菓子に危険物が混入されているという記事を掲載し、全米でパニックが起こりました。しかし後の調査でこれらはほぼ全て誤報や都市伝説であることが判明しました。実際の事件はほとんどなかったにもかかわらず、この「毒入りお菓子」の都市伝説は現代まで続き、「Trick or Treat」の習慣を病院や学校などの管理された環境で行うきっかけにもなりました。社会学者はこれを「モラル・パニック」の典型例として研究しています。",
+        "choices": [
+          {
+            "choice_text": "UFOの大量目撃情報",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "お菓子に毒針や毒物が混入されているという警告",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "魔女が実在するという科学的証明",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "ゾンビウイルスの発生",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q036",
+        "question_text": "ケルト神話の英雄クー・フーリンの伝説で、サウィン祭に起こる重要な出来事は?",
+        "explanation": "正解:彼が最愛の息子コンラを知らずに殺してしまう\n\nアイルランド神話の大英雄クー・フーリンの悲劇的な物語の一つが、サウィン祭の時期に起こります。彼は遠い地から来た若い戦士との戦いを余儀なくされますが、その戦士が自分の息子コンラであることに気づかず殺してしまいます。サウィン祭は境界が曖昧になる時期であり、認識の誤りや悲劇が起こりやすいとされました。この物語は『アルスター物語群』の一部で、サウィンの持つ「境界」「変容」「避けられない運命」というテーマを体現しています。",
+        "choices": [
+          {
+            "choice_text": "彼が不死身の力を獲得する",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "彼が最愛の息子コンラを知らずに殺してしまう",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "彼が魔女に変身させられる",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "彼が異界の王となる",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q037",
+        "question_text": "18世紀スコットランドの詩人ロバート・バーンズが1785年に書いた、ハロウィンの風習を詳細に記録した詩のタイトルは?",
+        "explanation": "正解:『Halloween』\n\nロバート・バーンズの詩『Halloween』(1785年)は、18世紀スコットランドのハロウィン風習を詳細に記録した貴重な文献です。詩の中では、キャベツを引き抜いて結婚相手を占う「kail-pulling」、ナッツを使った占い、りんごの皮で未来の配偶者のイニシャルを占うなど、当時の若者たちの占い遊びが生き生きと描かれています。この詩は民俗学的にも重要で、ハロウィンがキリスト教化される前の古い習慣を知る手がかりとなっています。",
+        "choices": [
+          {
+            "choice_text": "『Tam o' Shanter』",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "『Halloween』",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "『Auld Lang Syne』",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "『To a Mouse』",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q038",
+        "question_text": "アメリカで最初に「Trick or Treat」という言葉が印刷物に登場したのは何年?",
+        "explanation": "正解:1927年\n\n「Trick or Treat」という言葉が印刷物に初めて登場したのは、1927年11月のカナダ・アルバータ州の新聞です。アメリカでは1939年の土曜夕刊誌に掲載されたのが最初の記録とされています。しかし、この言葉が全米で一般的になったのは1950年代で、それまでは地域によって「Trick or Treat」「Help the Poor」「Shell Out」など様々な呼び方がありました。言葉の普及には、1952年のディズニーアニメ『Trick or Treat』も大きく貢献しました。",
+        "choices": [
+          {
+            "choice_text": "1895年",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "1910年",
+            "is_correct": false,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "1927年",
+            "is_correct": true,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "1945年",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q039",
+        "question_text": "中世アイルランドの法典『Brehon Laws』では、サウィン祭の期間中のみ許された特別な行為は?",
+        "explanation": "正解:負債の支払い猶予と法的紛争の一時停止\n\nブレホン法(Brehon Laws)は古代アイルランドの法体系で、サウィン祭の期間(通常3日間)は特別な「休戦期間」とされました。この期間中は負債の取り立てが禁止され、法的紛争は一時停止され、敵対する部族間でも暴力行為が禁じられました。これは新年の始まりとして社会全体をリセットし、コミュニティの調和を回復する意味がありました。また、王や貴族は民衆に食事を振る舞う義務があり、社会階層を超えた交流が奨励されました。",
+        "choices": [
+          {
+            "choice_text": "重婚",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "負債の支払い猶予と法的紛争の一時停止",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "窃盗",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "王位への挑戦",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      },
+      {
+        "id": "q040",
+        "question_text": "1970年代にアメリカで起きた、ハロウィン文化に大きな影響を与えた「レーズン事件」の正式名称は?",
+        "explanation": "正解:「ピクシースティック殺人事件」(The Candy Man Murders)\n\n1974年テキサス州で起きた「ピクシースティック殺人事件」は、ロナルド・クラーク・オブライアンが息子を保険金目的で青酸カリ入りのキャンディで毒殺した事件です。この事件は「毒入りハロウィンキャンディ」の都市伝説を現実化させ、全米のハロウィンの祝い方を一変させました。以降、病院でのX線検査、学校でのハロウィンパーティー、包装されたキャンディのみを受け取るなどの安全対策が広まりました。皮肉なことに、見知らぬ人からの危険よりも、この事件のように家族内の犯罪の方が実際には多いのですが、この事件がハロウィンの「安全神話」を崩壊させたことは確かです。",
+        "choices": [
+          {
+            "choice_text": "タイレノール事件",
+            "is_correct": false,
+            "choice_order": 1
+          },
+          {
+            "choice_text": "ピクシースティック殺人事件",
+            "is_correct": true,
+            "choice_order": 2
+          },
+          {
+            "choice_text": "キャンディマン連続殺人事件",
+            "is_correct": false,
+            "choice_order": 3
+          },
+          {
+            "choice_text": "ハロウィン・ストレンジャー事件",
+            "is_correct": false,
+            "choice_order": 4
+          }
+        ]
+      }
+    ]
+  }
+]

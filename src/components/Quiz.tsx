@@ -122,9 +122,8 @@ export function Quiz() {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setTimeLeft(30);
     } else {
-      // Quiz finished, redirect to results page (TODO)
-      alert("Quiz finished! Results page coming soon...");
-      window.location.href = "/quiz-list";
+      // Quiz finished, redirect to results page
+      window.location.href = `/result?groupId=${groupId}`;
     }
   };
 
@@ -214,7 +213,7 @@ export function Quiz() {
                 }}
               >
                 <span
-                  className="truncate"
+                  className="wrap-anywhere"
                   onClick={(e) =>
                     handleAnswerSelect(
                       choice.choice_text,

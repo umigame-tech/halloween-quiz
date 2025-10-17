@@ -1,10 +1,6 @@
 import halloweenBg from "../halloween_bg.png";
 
-interface HalloweenQuizProps {
-  onStart: () => void;
-}
-
-export function HalloweenQuiz({ onStart }: HalloweenQuizProps) {
+export function HalloweenQuiz() {
   return (
     <div
       className="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden"
@@ -27,9 +23,9 @@ export function HalloweenQuiz({ onStart }: HalloweenQuizProps) {
                 怖くてかわいい4択クイズ
               </h2>
             </div>
-            <button
-              onClick={onStart}
-              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 @[480px]:h-14 @[480px]:px-8 text-white text-lg font-bold leading-normal tracking-[0.015em] transition-transform duration-300 ease-in-out hover:scale-105"
+            <a
+              href="/quiz-list"
+              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 @[480px]:h-14 @[480px]:px-8 text-white text-lg font-bold leading-normal tracking-[0.015em] transition-transform duration-300 ease-in-out hover:scale-105 no-underline"
               style={{ backgroundColor: "#7311d4" }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = "#5f0eb8";
@@ -39,7 +35,7 @@ export function HalloweenQuiz({ onStart }: HalloweenQuizProps) {
               }}
             >
               <span className="truncate">スタート</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

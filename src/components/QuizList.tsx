@@ -35,7 +35,7 @@ export function QuizList() {
   };
 
   return (
-    <div className="relative flex h-auto min-h-screen w-full flex-col bg-background-dark group/design-root overflow-x-hidden">
+    <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-3xl mx-auto">
       <div className="flex items-center bg-background-dark p-4 pb-2 justify-between">
         <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center font-display">
           Halloween Quiz Challenge

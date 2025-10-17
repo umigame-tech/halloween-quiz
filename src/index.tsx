@@ -3,6 +3,7 @@ import index from "./index.html";
 import quizList from "./quiz-list.html";
 import quiz from "./quiz.html";
 import result from "./result.html";
+import explanation from "./explanation.html";
 
 const server = serve({
   routes: {
@@ -10,6 +11,7 @@ const server = serve({
     "/quiz-list": quizList,
     "/quiz": quiz,
     "/result": result,
+    "/explanation": explanation,
 
     "/api/hello": {
       async GET(req) {

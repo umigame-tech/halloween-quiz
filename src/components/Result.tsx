@@ -107,6 +107,10 @@ export function Result() {
     window.open(`https://www.threads.net/intent/post?text=${text}`, "_blank");
   };
 
+  const handleShowExplanation = () => {
+    window.location.href = `/explanation?groupId=${groupId}&questionIndex=0`;
+  };
+
   if (!quizGroup) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#1E1E1E]">
@@ -154,6 +158,14 @@ export function Result() {
       </h1>
 
       <div className="flex flex-col items-center gap-4 px-4 py-8">
+        <button
+          onClick={handleShowExplanation}
+          className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white"
+          style={{ backgroundColor: "#8A2BE2" }}
+        >
+          解説を表示
+        </button>
+
         <button
           onClick={handleRetry}
           className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white"

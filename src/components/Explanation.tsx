@@ -34,6 +34,7 @@ export function Explanation() {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [quizGroup, setQuizGroup] = useState<QuizGroup | null>(null);
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   useEffect(() => {
     // Get groupId and questionIndex from URL query parameters
@@ -74,6 +75,14 @@ export function Explanation() {
     }
   };
 
+  const handleBackgroundClick = () => {
+    setIsExpanded(false);
+  };
+
+  const handleBottomSheetClick = (isExpanded: boolean) => {
+    setIsExpanded(!isExpanded);
+  };
+
   if (!quizGroup) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#191022]">
@@ -87,13 +96,12 @@ export function Explanation() {
   const isLastQuestion = questionIndex === quizGroup.questions.length - 1;
 
   return (
-    <div className="relative min-h-screen flex flex-col px-4 py-6 text-white" style={{
-      backgroundImage: `url(${halloweenBg})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundColor: "#191022"
-    }}>
+    <div
+      className="relative min-h-screen flex flex-col px-4 py-6 text-white"
+      style={{
+        backgroundColor: "#191022",
+      }}
+    >
       <div className="absolute top-4 left-4 z-10">
         <div
           className="flex items-center justify-center bg-gray-800 bg-opacity-50 rounded-full w-10 h-10 cursor-pointer"
@@ -110,12 +118,15 @@ export function Explanation() {
               第{questionIndex + 1}問
             </span>
           </div>
-          <h1 className="text-2xl font-bold mb-6">{currentQuestion.question_text}</h1>
+          <h1 className="text-2xl font-bold mb-6">
+            {currentQuestion.question_text}
+          </h1>
           <div className="space-y-4">
             {currentQuestion.choices
               .sort((a, b) => a.choice_order - b.choice_order)
               .map((choice, index) => {
-                const isUserChoice = userAnswer?.selectedChoice === choice.choice_text;
+                const isUserChoice =
+                  userAnswer?.selectedChoice === choice.choice_text;
                 const isCorrect = choice.is_correct;
                 const bgColor = isCorrect
                   ? "bg-orange-500"
@@ -137,42 +148,65 @@ export function Explanation() {
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end">
-        <div className="bg-[#2a1a3e] rounded-t-3xl p-6 h-3/5 flex flex-col">
-          <div className="flex items-center mb-4">
-            {userAnswer?.isCorrect ? (
-              <>
-                <span className="material-symbols-outlined text-green-400 text-4xl mr-2">
-                  task_alt
-                </span>
-                <span className="text-2xl font-bold text-green-400">正解！</span>
-              </>
-            ) : (
-              <>
-                <span className="material-symbols-outlined text-red-400 text-4xl mr-2">
-                  cancel
-                </span>
-                <span className="text-2xl font-bold text-red-400">不正解</span>
-              </>
-            )}
-          </div>
-          <div className="flex-grow overflow-y-auto pr-2" style={{
-            msOverflowStyle: "none",
-            scrollbarWidth: "none"
-          }}>
+      {/* Darkening overlay when expanded - clickable to collapse */}
+      {isExpanded && (
+        <div
+          className="fixed inset-0 bg-black/40 z-20"
+          onClick={handleBackgroundClick}
+        />
+      )}
+
+      {/* Bottom sheet */}
+      <div
+        className={`fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl p-6 flex flex-col transition-all duration-300 z-30 ${
+          isExpanded ? "h-3/5" : "h-auto"
+        }`}
+        onClick={() => handleBottomSheetClick(isExpanded)}
+        style={{ cursor: isExpanded ? "default" : "pointer" }}
+      >
+        <div className="flex items-center mb-4">
+          {userAnswer?.isCorrect ? (
+            <>
+              <span className="material-symbols-outlined text-green-400 text-4xl mr-2">
+                task_alt
+              </span>
+              <span className="text-2xl font-bold text-green-400">正解！</span>
+            </>
+          ) : (
+            <>
+              <span className="material-symbols-outlined text-red-400 text-4xl mr-2">
+                cancel
+              </span>
+              <span className="text-2xl font-bold text-red-400">不正解</span>
+            </>
+          )}
+          <span className="ml-2 text-sm">{isExpanded ? "" : "解説を見る"}</span>
+        </div>
+
+        {isExpanded && (
+          <div
+            className="flex-grow overflow-y-auto pr-2"
+            style={{
+              msOverflowStyle: "none",
+              scrollbarWidth: "none",
+            }}
+          >
             <h2 className="text-xl font-bold mb-2">解説</h2>
             <p className="text-base leading-relaxed whitespace-pre-line">
               {currentQuestion.explanation}
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-gray-600">
-            <button
-              onClick={handleNext}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg"
-            >
-              {isLastQuestion ? "クイズ結果に戻る" : "次の問題へ"}
-            </button>
-          </div>
+        )}
+
+        <div
+          className={`${isExpanded ? "mt-4 pt-4 border-t border-gray-600" : "mt-0"}`}
+        >
+          <button
+            onClick={handleNext}
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg"
+          >
+            {isLastQuestion ? "クイズ結果に戻る" : "次の問題へ"}
+          </button>
         </div>
       </div>
     </div>

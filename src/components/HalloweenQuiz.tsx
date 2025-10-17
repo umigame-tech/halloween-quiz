@@ -1,6 +1,10 @@
 import halloweenBg from "../halloween_bg.png";
 
-export function HalloweenQuiz() {
+interface HalloweenQuizProps {
+  onStart: () => void;
+}
+
+export function HalloweenQuiz({ onStart }: HalloweenQuizProps) {
   return (
     <div
       className="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden"
@@ -24,6 +28,7 @@ export function HalloweenQuiz() {
               </h2>
             </div>
             <button
+              onClick={onStart}
               className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 @[480px]:h-14 @[480px]:px-8 text-white text-lg font-bold leading-normal tracking-[0.015em] transition-transform duration-300 ease-in-out hover:scale-105"
               style={{ backgroundColor: "#7311d4" }}
               onMouseEnter={(e) => {

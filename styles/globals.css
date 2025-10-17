@@ -39,6 +39,14 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Halloween custom colors */
+  --color-halloween-primary: #7311d4;
+  --color-halloween-bg-light: #f7f6f8;
+  --color-halloween-bg-dark: #191022;
+
+  /* Font family */
+  --font-family-display: "Space Grotesk", sans-serif;
 }
 
 :root {

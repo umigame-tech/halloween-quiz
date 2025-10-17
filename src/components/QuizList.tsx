@@ -1,4 +1,3 @@
-import { useState } from "react";
 import seedData from "../../db/seed-data.json";
 
 interface QuizGroup {
@@ -30,8 +29,7 @@ export function QuizList() {
   const quizGroups = seedData as QuizGroup[];
 
   const handleStartQuiz = (groupId: string) => {
-    console.log("Starting quiz for group:", groupId);
-    // TODO: Navigate to quiz screen
+    window.location.href = `/quiz?groupId=${groupId}`;
   };
 
   return (

@@ -1,11 +1,13 @@
 import { serve } from "bun";
 import index from "./index.html";
 import quizList from "./quiz-list.html";
+import quiz from "./quiz.html";
 
 const server = serve({
   routes: {
     "/": index,
     "/quiz-list": quizList,
+    "/quiz": quiz,
 
     "/api/hello": {
       async GET(req) {

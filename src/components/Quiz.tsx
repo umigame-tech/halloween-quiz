@@ -84,7 +84,11 @@ export function Quiz() {
     moveToNextQuestion();
   };
 
-  const handleAnswerSelect = (choiceText: string, isCorrect: boolean) => {
+  const handleAnswerSelect = (
+    choiceText: string,
+    isCorrect: boolean,
+    elem: HTMLButtonElement,
+  ) => {
     if (!quizGroup) return;
 
     const currentQuestion = quizGroup.questions[currentQuestionIndex];
@@ -101,9 +105,13 @@ export function Quiz() {
     setAnswers(updatedAnswers);
     sessionStorage.setItem(`quiz_${groupId}`, JSON.stringify(updatedAnswers));
 
+    const originalColor = elem.style.backgroundColor;
+    elem.style.backgroundColor = "#4caf50";
+
     // Wait a bit before moving to next question
     setTimeout(() => {
       moveToNextQuestion();
+      elem.style.backgroundColor = originalColor;
     }, 500);
   };
 
@@ -136,19 +144,25 @@ export function Quiz() {
   }
 
   const currentQuestion = quizGroup.questions[currentQuestionIndex];
-  const progress = ((timeLeft / 30) * 100);
+  const progress = (timeLeft / 30) * 100;
   const questionNumber = currentQuestionIndex + 1;
   const totalQuestions = quizGroup.questions.length;
 
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden bg-[#48286A]">
       <div className="flex items-center p-4 pb-2 justify-between">
-        <div className="flex size-12 shrink-0 items-center cursor-pointer" onClick={handleClose}>
+        <div
+          className="flex size-12 shrink-0 items-center cursor-pointer"
+          onClick={handleClose}
+        >
           <span className="material-symbols-outlined text-white text-3xl">
             close
           </span>
         </div>
-        <h2 className="text-white text-3xl font-bold leading-tight tracking-wider flex-1 text-center" style={{ fontFamily: "var(--font-family-display)" }}>
+        <h2
+          className="text-white text-3xl font-bold leading-tight tracking-wider flex-1 text-center"
+          style={{ fontFamily: "var(--font-family-display)" }}
+        >
           Halloween Quiz
         </h2>
         <div className="flex w-12 items-center justify-end">
@@ -160,14 +174,16 @@ export function Quiz() {
 
       <div className="flex flex-col gap-3 p-4">
         <div className="flex gap-6 justify-end">
-          <p className="text-white/80 text-sm font-normal leading-normal">{timeLeft}s</p>
+          <p className="text-white/80 text-sm font-normal leading-normal">
+            {timeLeft}s
+          </p>
         </div>
         <div className="rounded-full bg-white/20">
           <div
             className="h-2 rounded-full transition-all duration-1000"
             style={{
               width: `${progress}%`,
-              backgroundColor: "#FFA500"
+              backgroundColor: "#FFA500",
             }}
           ></div>
         </div>
@@ -184,14 +200,32 @@ export function Quiz() {
             .map((choice, index) => (
               <button
                 key={index}
-                onClick={() => handleAnswerSelect(choice.choice_text, choice.is_correct)}
+                onClick={(e) => {
+                  handleAnswerSelect(
+                    choice.choice_text,
+                    choice.is_correct,
+                    e.target as HTMLButtonElement,
+                  );
+                }}
                 className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 text-lg font-bold leading-normal tracking-[0.015em] w-full transition-transform hover:scale-105"
                 style={{
                   backgroundColor: "#FFA500",
-                  color: "#48286A"
+                  color: "#48286A",
                 }}
               >
-                <span className="truncate">{choice.choice_text}</span>
+                <span
+                  className="truncate"
+                  onClick={(e) =>
+                    handleAnswerSelect(
+                      choice.choice_text,
+                      choice.is_correct,
+                      (e.target as HTMLSpanElement)
+                        .parentElement as HTMLButtonElement,
+                    )
+                  }
+                >
+                  {choice.choice_text}
+                </span>
               </button>
             ))}
         </div>

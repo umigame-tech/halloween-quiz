@@ -36,7 +36,7 @@ export function QuizList() {
     <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-3xl mx-auto">
       <div className="flex items-center bg-background-dark p-4 pb-2 justify-between">
         <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center font-display">
-          Halloween Quiz Challenge
+          <a href="/">Halloween Quiz Challenge</a>
         </h2>
       </div>
       <div className="h-5 bg-background-dark"></div>
@@ -56,7 +56,7 @@ export function QuizList() {
                 <p className="text-white text-base font-medium leading-normal line-clamp-1 font-display">
                   {quizGroup.group.name}
                 </p>
-                <p className="text-[#ab9db9] text-sm font-normal leading-normal line-clamp-2 font-display">
+                <p className="text-[#ab9db9] text-sm font-normal leading-normal font-display">
                   {quizGroup.group.description}
                 </p>
               </div>

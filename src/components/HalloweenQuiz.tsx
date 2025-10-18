@@ -20,7 +20,7 @@ export function HalloweenQuiz() {
                 ハロウィンクイズ
               </h1>
               <h2 className="text-white text-base font-normal leading-normal @[480px]:text-lg">
-                怖くてかわいい4択クイズ
+                ハロウィンについて詳しくなれる4択クイズ
               </h2>
             </div>
             <a

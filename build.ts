@@ -140,7 +140,8 @@ const result = await Bun.build({
   },
   ...cliConfig,
   naming: {
-    entry: "[name].[hash].[ext]",
+    // Keep HTML files without hash for Cloudflare Workers compatibility
+    entry: "[name].[ext]",
     chunk: "[name].[hash].[ext]",
     asset: "[name].[hash].[ext]",
   },

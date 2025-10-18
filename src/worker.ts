@@ -8,7 +8,7 @@ export default {
     const pathname = url.pathname;
 
     // API routes
-    if (pathname.startsWith('/api/')) {
+    if (pathname.startsWith("/api/")) {
       return handleApiRoutes(request, pathname);
     }
 
@@ -18,11 +18,11 @@ export default {
       try {
         // Map routes to their corresponding HTML files
         const htmlRoutes: Record<string, string> = {
-          '/': '/index.html',
-          '/quiz-list': '/quiz-list.html',
-          '/quiz': '/quiz.html',
-          '/result': '/result.html',
-          '/explanation': '/explanation.html',
+          "/": "/index.html",
+          "/quiz-list": "/quiz-list.html",
+          "/quiz": "/quiz.html",
+          "/result": "/result.html",
+          "/explanation": "/explanation.html",
         };
 
         // Check if this is a mapped route
@@ -30,38 +30,44 @@ export default {
           const assetUrl = new URL(request.url);
           assetUrl.pathname = htmlRoutes[pathname];
           const assetRequest = new Request(assetUrl, request);
-          return env.ASSETS.fetch(assetRequest);
+          const response = await env.ASSETS.fetch(assetRequest);
+          return response;
         }
 
         // Try to serve the file directly (for CSS, JS, images, etc.)
-        return env.ASSETS.fetch(request);
+        const response = await env.ASSETS.fetch(request);
+        return response;
       } catch (error) {
-        console.error('Error serving asset:', error);
+        console.error("Error serving asset:", error);
+        return new Response(`Error: ${error}`, { status: 500 });
       }
     }
 
-    return new Response('Not Found', { status: 404 });
+    return new Response("ASSETS binding not found", { status: 500 });
   },
 };
 
 /**
  * Handle API routes
  */
-async function handleApiRoutes(request: Request, pathname: string): Promise<Response> {
+async function handleApiRoutes(
+  request: Request,
+  pathname: string,
+): Promise<Response> {
   const method = request.method;
 
   // /api/hello
-  if (pathname === '/api/hello') {
-    if (method === 'GET') {
+  if (pathname === "/api/hello") {
+    if (method === "GET") {
       return Response.json({
-        message: 'Hello, world!',
-        method: 'GET',
+        message: "Hello, world!",
+        method: "GET",
       });
     }
-    if (method === 'PUT') {
+    if (method === "PUT") {
       return Response.json({
-        message: 'Hello, world!',
-        method: 'PUT',
+        message: "Hello, world!",
+        method: "PUT",
       });
     }
   }
@@ -75,5 +81,5 @@ async function handleApiRoutes(request: Request, pathname: string): Promise<Resp
     });
   }
 
-  return new Response('Not Found', { status: 404 });
+  return new Response("Not Found", { status: 404 });
 }

@@ -38,6 +38,29 @@ export function Explanation() {
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
   const [isExpanded, setIsExpanded] = useState(true);
 
+  // Convert URLs in text to clickable links
+  const renderTextWithLinks = (text: string) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = text.split(urlRegex);
+
+    return parts.map((part, index) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a
+            key={index}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 underline"
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  };
+
   // Load quiz data from URL parameters
   const loadQuizData = () => {
     const params = new URLSearchParams(window.location.search);
@@ -245,7 +268,7 @@ export function Explanation() {
           >
             <h2 className="text-xl font-bold mb-2">解説</h2>
             <p className="text-base leading-relaxed whitespace-pre-line">
-              {currentQuestion.explanation}
+              {renderTextWithLinks(currentQuestion.explanation)}
             </p>
           </div>
         )}

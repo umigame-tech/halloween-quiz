@@ -160,7 +160,7 @@ export function Result() {
       <div className="flex flex-col items-center gap-4 px-4 py-8">
         <button
           onClick={handleShowExplanation}
-          className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white"
+          className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white cursor-pointer"
           style={{ backgroundColor: "#8A2BE2" }}
         >
           解説を表示
@@ -168,7 +168,7 @@ export function Result() {
 
         <button
           onClick={handleRetry}
-          className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white"
+          className="w-full max-w-sm font-bold py-3 px-4 rounded-lg text-lg text-white cursor-pointer"
           style={{ backgroundColor: "#FF7F50" }}
         >
           もう一度挑戦
@@ -177,13 +177,13 @@ export function Result() {
         <div className="flex w-full max-w-sm gap-4">
           <button
             onClick={handleTwitterShare}
-            className="flex-1 bg-gray-800 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2"
+            className="flex-1 bg-gray-800 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
           >
             Xでシェア
           </button>
           <button
             onClick={handleThreadsShare}
-            className="flex-1 bg-gray-800 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2"
+            className="flex-1 bg-gray-800 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
           >
             Threadsでシェア
           </button>

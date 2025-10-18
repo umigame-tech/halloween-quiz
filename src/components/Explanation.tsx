@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import seedData from "../../db/seed-data.json";
 import halloweenBg from "../halloween_bg.webp";
+import { useNavigate } from "../hooks/useNavigate";
 
 interface Question {
   id: string;
@@ -30,14 +31,15 @@ interface UserAnswer {
 }
 
 export function Explanation() {
+  const navigate = useNavigate();
   const [groupId, setGroupId] = useState<string>("");
   const [questionIndex, setQuestionIndex] = useState(0);
   const [quizGroup, setQuizGroup] = useState<QuizGroup | null>(null);
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
   const [isExpanded, setIsExpanded] = useState(true);
 
-  useEffect(() => {
-    // Get groupId and questionIndex from URL query parameters
+  // Load quiz data from URL parameters
+  const loadQuizData = () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("groupId");
     const index = params.get("questionIndex");
@@ -59,18 +61,43 @@ export function Explanation() {
         setQuestionIndex(parseInt(index, 10));
       }
     }
+
+    // Reset to expanded state when navigating
+    setIsExpanded(true);
+  };
+
+  useEffect(() => {
+    loadQuizData();
+
+    // Listen for navigation events
+    const handlePopState = () => {
+      loadQuizData();
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
   }, []);
 
   const handleClose = () => {
     window.location.href = `/result?groupId=${groupId}`;
   };
 
-  const handleNext = () => {
+  const handleNext = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     if (!quizGroup) return;
 
     if (questionIndex < quizGroup.questions.length - 1) {
-      window.location.href = `/explanation?groupId=${groupId}&questionIndex=${questionIndex + 1}`;
+      // SPA navigation for next question
+      navigate("/explanation", {
+        groupId,
+        questionIndex: (questionIndex + 1).toString(),
+      });
     } else {
+      // Regular navigation back to result
       window.location.href = `/result?groupId=${groupId}`;
     }
   };
@@ -176,13 +203,18 @@ export function Explanation() {
 
       {/* Bottom sheet */}
       <div
-        className={`fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl p-6 flex flex-col transition-all duration-300 z-30 ${
+        className={`fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col transition-all duration-300 z-30 ${
           isExpanded ? "h-3/5" : "h-auto"
         }`}
-        onClick={() => handleBottomSheetClick(isExpanded)}
-        style={{ cursor: isExpanded ? "default" : "pointer" }}
       >
-        <div className="flex items-center mb-4">
+        <div
+          className="flex items-center mb-4 cursor-pointer pt-6"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            handleBottomSheetClick(isExpanded);
+          }}
+        >
           {userAnswer?.isCorrect ? (
             <>
               <span className="material-symbols-outlined text-green-400 text-4xl mr-2">
@@ -198,7 +230,9 @@ export function Explanation() {
               <span className="text-2xl font-bold text-red-400">不正解</span>
             </>
           )}
-          <span className="ml-2 text-sm">{isExpanded ? "" : "解説を見る"}</span>
+          <span className="ml-2 text-sm">
+            {isExpanded ? "閉じる" : "解説を見る"}
+          </span>
         </div>
 
         {isExpanded && (
@@ -221,7 +255,7 @@ export function Explanation() {
         >
           <button
             onClick={handleNext}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg cursor-pointer"
           >
             {isLastQuestion ? "クイズ結果に戻る" : "次の問題へ"}
           </button>

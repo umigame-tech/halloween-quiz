@@ -531,7 +531,7 @@
       {
         "id": "q020",
         "question_text": "日本で初めて大規模なハロウィンイベントが行われたのはどこ?",
-        "explanation": "正解:東京ディズニーランド\n\n日本で最初に大規模なハロウィンイベントを開催したのは東京ディズニーランドです。1997年に園内パレードとして始まり、2000年から本格的なハロウィンイベントとして定着しました。これをきっかけに日本でもハロウィンが広く認知されるようになりました。現在では渋谷や原宿など、各地で盛大に祝われています。",
+        "explanation": "正解:東京ディズニーランド\n\n日本で最初に大規模なハロウィンイベントが開催された場所の一つは東京ディズニーランドです。1997年に園内パレードとして始まり、2000年から本格的なハロウィンイベントとして定着しました。これをきっかけに日本でもハロウィンが広く認知されるようになりました。\n\n同年の1997年は川崎でも日本初となるハロウィン仮装パレードが行われました。カワサキハロウィンはハロウィンの楽しみ方が多様化したこと等を理由に、2021年に終了となりました。\n\n現在では渋谷や原宿など、各地で盛大に祝われています。",
         "choices": [
           {
             "choice_text": "ユニバーサル・スタジオ・ジャパン",
@@ -567,7 +567,7 @@
       {
         "id": "q021",
         "question_text": "古代ケルトの暦で、サウィン祭が属していた季節区分は?",
-        "explanation": "正解:冬の始まり\n\n古代ケルトの暦では1年を4つの季節に分け、サウィン(10月31日~11月1日)は冬の始まりを示す重要な祭りでした。ケルト暦では夏(Samhradh)と冬(Geimhreadh)が主要な季節で、サウィンは夏の終わりと冬の始まりの境界を意味し、この境界の時期に霊界との扉が開くと信じられていました。",
+        "explanation": "正解:冬の始まり\n\n古代ケルトの暦では1年を夏と冬に二分していました。夏と冬を更に二分して4つの季節に分けており、サウィン(10月31日~11月1日)は冬の始まりを示す重要な祭りでした。サウィンは夏の終わりと冬の始まりの境界を意味し、この境界の時期に霊界との扉が開くと信じられていました。",
         "choices": [
           {
             "choice_text": "秋の終わり",
@@ -621,7 +621,7 @@
       {
         "id": "q023",
         "question_text": "中世のキリスト教会が11月1日を「諸聖人の日」に定めたのは何世紀?",
-        "explanation": "正解:8世紀\n\n教皇グレゴリウス3世が8世紀(731年頃)に11月1日を諸聖人の日として定めました。その後、教皇グレゴリウス4世が835年に正式に全教会で祝うことを命じました。この日付の選定には、異教徒のサウィン祭をキリスト教の祝日に取り込むという意図があったとされています。",
+        "explanation": "正解:8世紀\n\n教皇グレゴリウス3世が8世紀(731年頃)に11月1日を諸聖人の日として定めました。その後、フランス国王ルイ1世（ルートヴィヒ1世）が835年に11月1日を祝日として布告しました。この日付の選定には、異教徒のサウィン祭をキリスト教の祝日に取り込むという意図があったとされています。",
         "choices": [
           {
             "choice_text": "5世紀",
@@ -647,8 +647,8 @@
       },
       {
         "id": "q024",
-        "question_text": "「トリック・オア・トリート」の習慣の直接的な起源とされる中世ヨーロッパの風習は?",
-        "explanation": "正解:ソウリング(Souling)\n\nソウリングは中世の「諸魂日(All Souls' Day、11月2日)」に行われた風習で、貧しい人々が富裕層の家を訪ね、死者の魂のために祈る代わりに「ソウルケーキ」という特別なケーキをもらいました。この「食べ物と引き換えに何かをする」という概念が現代のトリック・オア・トリートの起源とされています。",
+        "question_text": "「トリック・オア・トリート」の習慣の直接的な起源とされるソウルケーキにまつわる中世ヨーロッパの風習は?",
+        "explanation": "正解:ソウリング(Souling)\n\nソウリングは中世ヨーロッパで10月31日〜11月2日に行われた風習で、貧しい人々が富裕層の家を訪ね、死者の魂のために祈る代わりに「ソウルケーキ」という特別なケーキをもらいました。この「食べ物と引き換えに何かをする」という概念が現代のトリック・オア・トリートの起源とされています。",
         "choices": [
           {
             "choice_text": "マミング(Mumming)",
@@ -675,7 +675,7 @@
       {
         "id": "q025",
         "question_text": "ハロウィンのシンボルとして使われる満月だが、実際に10月31日が満月になる頻度は?",
-        "explanation": "正解:約19年に1度\n\n10月31日に満月が来るのは非常に珍しく、平均して約19年に1度です。これはメトン周期(太陰太陽周期)と呼ばれる天文学的なサイクルによるものです。直近では2020年10月31日に満月(ブルームーン)があり、次は2039年、2058年と予測されています。ハロウィンの満月は「ハンターズムーン」とも呼ばれます。",
+        "explanation": "正解:約19年に1度\n\n10月31日に満月が来るのは非常に珍しく、平均して約19年に1度です。これはメトン周期(太陰太陽周期)と呼ばれる天文学的なサイクルによるものです。直近では2020年10月31日に満月(ブルームーン)があり、次は2039年、2058年と予測されています。ハロウィンのある10月の満月は「ハンターズムーン」とも呼ばれます。",
         "choices": [
           {
             "choice_text": "毎年",
@@ -845,26 +845,26 @@
     "questions": [
       {
         "id": "q031",
-        "question_text": "古代ケルトのドルイド僧がサウィン祭で焚いた「聖なる火」に使われた特定の木の組み合わせは?",
-        "explanation": "正解:オークとハシバミ\n\nドルイド僧は「ティンネ(Tinne)」と呼ばれる聖なる火を焚く際、オーク(樫)とハシバミ(榛)の木を使いました。オークは「森の王」として神聖視され、ハシバミは知恵と予言の象徴でした。この火は全ての家庭の炉火を一度消してから再点火する儀式に使われ、コミュニティの浄化と再生を意味しました。ケルトの樹木暦(Ogham)でもこの2つの木は特別な位置を占めています。",
+        "question_text": "古代ケルトの暦を記録した「コリニー暦」が発見されたのは何年?",
+        "explanation": "正解:1897年\n\nコリニー暦は1897年にフランスのコリニー(Coligny)で発見された紀元後2世紀のブロンズ製銘板です。5年周期62ヶ月の太陰太陽暦を示しており、「Samonios」という月(「夏の終わり」を意味する)が記載されています。これがアイルランドのサウィン祭に直接つながる最も重要な考古学的証拠の一つです。\n\n参考:\nhttps://en.wikipedia.org/wiki/Samhain\nhttps://www.worldhistory.org/Samhain/",
         "choices": [
           {
-            "choice_text": "オークとハシバミ",
+            "choice_text": "1897年",
             "is_correct": true,
             "choice_order": 1
           },
           {
-            "choice_text": "松と杉",
+            "choice_text": "1823年",
             "is_correct": false,
             "choice_order": 2
           },
           {
-            "choice_text": "柳とトネリコ",
+            "choice_text": "1945年",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "イチイとヤドリギ",
+            "choice_text": "1776年",
             "is_correct": false,
             "choice_order": 4
           }
@@ -872,26 +872,26 @@
       },
       {
         "id": "q032",
-        "question_text": "1584年にスコットランドで出版された、ハロウィンに関する最古の文献記録の一つとされる書物は?",
-        "explanation": "正解:『Daemonologie』(悪魔学)\n\nスコットランド王ジェームズ6世(後のイングランド王ジェームズ1世)が著した『Daemonologie』は、魔女や悪魔、超自然現象について論じた書物です。この中でハロウィン前後の魔女の活動や民間伝承について言及されており、後のハロウィン文化や魔女狩りに大きな影響を与えました。この王は後にシェイクスピアの『マクベス』の魔女のシーンにもインスピレーションを与えたとされています。",
+        "question_text": "古代ケルトのドルイド僧がサウィン祭で宿り木を切り取る際に使った道具は?",
+        "explanation": "正解:黄金の鎌\n\nプリニウスの『博物誌』(紀元1世紀)によれば、「ドルイド僧にとって、宿り木とそれが育つ木(常にオーク)ほど神聖なものはない」とされています。冬至後6日目の月に、白い衣を着たドルイド僧が聖なるオークに登り、黄金の鎌で宿り木を切り取り、地面に触れないよう白い布で受け止めました。宿り木はケルト語で「万能薬」と呼ばれていました。\n\n参考:\nhttps://www.britannica.com/topic/Celtic-religion/Beliefs-practices-and-institutions\nhttps://sacred-texts.com/neu/celt/rac/rac16.htm",
         "choices": [
           {
-            "choice_text": "『Malleus Maleficarum』",
+            "choice_text": "銀の剣",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "『Daemonologie』",
+            "choice_text": "黄金の鎌",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "『The Discovery of Witchcraft』",
+            "choice_text": "青銅の斧",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "『Compendium Maleficarum』",
+            "choice_text": "鉄のナイフ",
             "is_correct": false,
             "choice_order": 4
           }
@@ -899,26 +899,26 @@
       },
       {
         "id": "q033",
-        "question_text": "ケルト神話でサウィン祭の期間中に開くとされる、異界への入口「シー(Sídhe)」の最も有名な場所は?",
-        "explanation": "正解:ニューグレンジ(Brú na Bóinne)\n\nアイルランドのミース州にあるニューグレンジは、紀元前3200年頃に建造された巨大な古墳で、ケルト神話では妖精や神々が住む異界「シー」への入口とされました。サウィン祭の時期には異界との境界が最も薄くなり、この場所で超自然的な出来事が起こると信じられていました。冬至には通路の奥の部屋まで太陽光が差し込む構造になっており、天文学的にも重要な遺跡です。ユネスコ世界遺産に登録されています。",
+        "question_text": "「ジャック・オー・ランタン」の伝説が印刷物に初めて登場したのはいつ?",
+        "explanation": "正解:1836年\n\n「ジャック・オー・ザ・ランタン」の伝説が印刷物に初めて登場したのは、1836年1月16日のダブリン・ペニー・ジャーナルです。長く詳細な物語として掲載され、語り手の叔父が泥炭地の上に見える鬼火を観察しながら語る形式でした。これはアイルランドの民間伝承の重要な文献記録の一つとなっています。\n\n参考:\nhttps://www.irishtimes.com/life-and-style/abroad/the-story-of-jack-o-lantern-if-you-knew-the-sufferings-of-that-forsaken-craythur-1.4065773\nhttps://en.wikipedia.org/wiki/Jack-o'-lantern",
         "choices": [
           {
-            "choice_text": "タラの丘",
+            "choice_text": "1776年",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "ニューグレンジ",
+            "choice_text": "1836年",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "ストーンヘンジ",
+            "choice_text": "1892年",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "グラストンベリー・トー",
+            "choice_text": "1912年",
             "is_correct": false,
             "choice_order": 4
           }
@@ -926,26 +926,26 @@
       },
       {
         "id": "q034",
-        "question_text": "中世スコットランドの「ガイジング(Guising)」で、子どもたちがお菓子をもらうために披露しなければならなかったものは?",
-        "explanation": "正解:芸(歌、詩、ジョーク、楽器演奏など)\n\nガイジングは16世紀のスコットランドで始まった習慣で、仮装した子どもたちは単にお菓子をねだるのではなく、歌を歌ったり、詩を暗唱したり、ジョークを言ったり、楽器を演奏したりして「対価」を得る必要がありました。これは「Trick or Treat」よりも古い伝統で、パフォーマンスと引き換えに報酬を得るという概念が含まれていました。この習慣はアイルランドやウェールズにも広がり、現代のハロウィンにも影響を与えています。",
+        "question_text": "11月1日を諸聖人の日(All Saints' Day)として最初に制定した教皇は誰?",
+        "explanation": "正解:教皇グレゴリウス3世\n\n教皇グレゴリウス3世(在位731-741年)が最初に11月1日の日付を確立しました。彼はローマの旧サン・ピエトロ大聖堂に「すべての聖人、殉教者、証聖者」を讃える礼拝堂を献堂し、11月1日がその祝日となりました。その後、教皇グレゴリウス4世が837年に教会全体で公式化しました。\n\n参考:\nhttps://www.newadvent.org/cathen/06789a.htm\nhttps://en.wikipedia.org/wiki/All_Saints'_Day\nhttps://www.britannica.com/topic/All-Saints-Day",
         "choices": [
           {
-            "choice_text": "家の掃除",
+            "choice_text": "教皇グレゴリウス1世",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "芸(歌、詩、ジョーク、楽器演奏など)",
+            "choice_text": "教皇グレゴリウス3世",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "お祈り",
+            "choice_text": "教皇レオ3世",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "薪割り",
+            "choice_text": "教皇インノケンティウス3世",
             "is_correct": false,
             "choice_order": 4
           }
@@ -953,26 +953,26 @@
       },
       {
         "id": "q035",
-        "question_text": "1919年にアメリカで発生した「ハロウィン・パニック」の原因となった新聞記事の内容は?",
-        "explanation": "正解:お菓子に毒針や毒物が混入されているという(誤報だった)警告\n\n1919年、複数の新聞がハロウィンのお菓子に危険物が混入されているという記事を掲載し、全米でパニックが起こりました。しかし後の調査でこれらはほぼ全て誤報や都市伝説であることが判明しました。実際の事件はほとんどなかったにもかかわらず、この「毒入りお菓子」の都市伝説は現代まで続き、「Trick or Treat」の習慣を病院や学校などの管理された環境で行うきっかけにもなりました。社会学者はこれを「モラル・パニック」の典型例として研究しています。",
+        "question_text": "中世の「ソウリング」習慣について最古の文献記録を残したのは誰?",
+        "explanation": "正解:ジョン・ミルク\n\nシュロップシャーのリレシャル修道院のアウグスティノ会修道士ジョン・ミルク(活動時期:1382年頃-1414年頃)が、1380年代頃に著した『フェスティアル(Festial)』が最古の文献です。ソウリングをすでに「古い」伝統として言及しており、「昔の善良な男女はこの日にパンを買い、愛する人々の魂のために配った」と記録しています。この作品は宗教改革以前の最も人気のある英語の本の一つでした。\n\n参考:\nhttps://en.wikipedia.org/wiki/Soul_cake\nhttps://www.medieval.eu/soul-cakes-and-souling/\nhttps://en.wikipedia.org/wiki/John_Mirk",
         "choices": [
           {
-            "choice_text": "UFOの大量目撃情報",
+            "choice_text": "ジェフリー・チョーサー",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "お菓子に毒針や毒物が混入されているという警告",
+            "choice_text": "ジョン・ミルク",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "魔女が実在するという科学的証明",
+            "choice_text": "ベーダ",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "ゾンビウイルスの発生",
+            "choice_text": "ウィリアム・ラングランド",
             "is_correct": false,
             "choice_order": 4
           }
@@ -980,26 +980,26 @@
       },
       {
         "id": "q036",
-        "question_text": "ケルト神話の英雄クー・フーリンの伝説で、サウィン祭に起こる重要な出来事は?",
-        "explanation": "正解:彼が最愛の息子コンラを知らずに殺してしまう\n\nアイルランド神話の大英雄クー・フーリンの悲劇的な物語の一つが、サウィン祭の時期に起こります。彼は遠い地から来た若い戦士との戦いを余儀なくされますが、その戦士が自分の息子コンラであることに気づかず殺してしまいます。サウィン祭は境界が曖昧になる時期であり、認識の誤りや悲劇が起こりやすいとされました。この物語は『アルスター物語群』の一部で、サウィンの持つ「境界」「変容」「避けられない運命」というテーマを体現しています。",
+        "question_text": "アイルランドのタラの丘にある「人質の塚」が天文学的に配置されているのは、どの祭日の日の出?",
+        "explanation": "正解:サウィンとインボルク\n\n人質の塚(Mound of the Hostages)は紀元前3200-2800年頃の新石器時代の構造物です。通路は南東を向き、サウィン(11月1日-8日)とインボルク(2月1日-4日)の日の出を捉えるよう配置されています。これは、サウィン祝祭がケルト人がアイルランドに到着する2000年以上前から存在していた可能性を示唆する重要な考古学的証拠です。ニューグレンジは冬至に配置されていますが、人質の塚はサウィンに特化しています。\n\n参考:\nhttps://www.worldhistory.org/Samhain/\nhttps://en.wikipedia.org/wiki/Mound_of_the_Hostages",
         "choices": [
           {
-            "choice_text": "彼が不死身の力を獲得する",
+            "choice_text": "冬至と夏至",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "彼が最愛の息子コンラを知らずに殺してしまう",
-            "is_correct": true,
+            "choice_text": "春分と秋分",
+            "is_correct": false,
             "choice_order": 2
           },
           {
-            "choice_text": "彼が魔女に変身させられる",
-            "is_correct": false,
+            "choice_text": "サウィンとインボルク",
+            "is_correct": true,
             "choice_order": 3
           },
           {
-            "choice_text": "彼が異界の王となる",
+            "choice_text": "ベルテーンとルーナサ",
             "is_correct": false,
             "choice_order": 4
           }
@@ -1007,26 +1007,26 @@
       },
       {
         "id": "q037",
-        "question_text": "18世紀スコットランドの詩人ロバート・バーンズが1785年に書いた、ハロウィンの風習を詳細に記録した詩のタイトルは?",
-        "explanation": "正解:『Halloween』\n\nロバート・バーンズの詩『Halloween』(1785年)は、18世紀スコットランドのハロウィン風習を詳細に記録した貴重な文献です。詩の中では、キャベツを引き抜いて結婚相手を占う「kail-pulling」、ナッツを使った占い、りんごの皮で未来の配偶者のイニシャルを占うなど、当時の若者たちの占い遊びが生き生きと描かれています。この詩は民俗学的にも重要で、ハロウィンがキリスト教化される前の古い習慣を知る手がかりとなっています。",
+        "question_text": "スコットランドの「ガイジング(Guising)」に関する最古の文献記録は何年のもの?",
+        "explanation": "正解:1623年\n\n1623年のエルギンの教会会議記録が最古の文献です。この記録では、教会の庭と中庭で仮面とバイザーを着用して剣の舞を演じた6人の男性が「ガイザー」または「gwysseris」として記録され、各自40シリングの罰金を科されました。ガイジングは16-17世紀から続く伝統で、人々が仮装して戸別訪問し、歌や詩などの芸を披露する習慣です。\n\n参考:\nhttps://en.wikipedia.org/wiki/Trick-or-treating\nhttps://www.atlasobscura.com/articles/scottish-halloween",
         "choices": [
           {
-            "choice_text": "『Tam o' Shanter』",
+            "choice_text": "1521年",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "『Halloween』",
+            "choice_text": "1623年",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "『Auld Lang Syne』",
+            "choice_text": "1745年",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "『To a Mouse』",
+            "choice_text": "1812年",
             "is_correct": false,
             "choice_order": 4
           }
@@ -1034,26 +1034,26 @@
       },
       {
         "id": "q038",
-        "question_text": "アメリカで最初に「Trick or Treat」という言葉が印刷物に登場したのは何年?",
-        "explanation": "正解:1927年\n\n「Trick or Treat」という言葉が印刷物に初めて登場したのは、1927年11月のカナダ・アルバータ州の新聞です。アメリカでは1939年の土曜夕刊誌に掲載されたのが最初の記録とされています。しかし、この言葉が全米で一般的になったのは1950年代で、それまでは地域によって「Trick or Treat」「Help the Poor」「Shell Out」など様々な呼び方がありました。言葉の普及には、1952年のディズニーアニメ『Trick or Treat』も大きく貢献しました。",
+        "question_text": "ロバート・バーンズの詩「Halloween」が出版されたのは何年?",
+        "explanation": "正解:1786年\n\nロバート・バーンズの「Halloween」は1785年に執筆され、1786年に『主にスコットランド方言による詩集(Poems, Chiefly in the Scottish Dialect)』のキルマーノック版として出版されました。28連、計252行から成るこの詩は、ケール引き抜き、ナッツ燃焼、鏡占いなど、18世紀スコットランドのハロウィン風習を詳細に記録した英語(およびスコッツ語)で最初の主要な文学作品として認識されています。\n\n参考:\nhttps://en.wikipedia.org/wiki/Halloween_(poem)\nhttps://saha.scot/robert-burns-and-halloween-by-nls-rare-books-curator-robert-betteridge/",
         "choices": [
           {
-            "choice_text": "1895年",
+            "choice_text": "1759年",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "1910年",
-            "is_correct": false,
+            "choice_text": "1786年",
+            "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "1927年",
-            "is_correct": true,
+            "choice_text": "1796年",
+            "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "1945年",
+            "choice_text": "1801年",
             "is_correct": false,
             "choice_order": 4
           }
@@ -1061,26 +1061,26 @@
       },
       {
         "id": "q039",
-        "question_text": "中世アイルランドの法典『Brehon Laws』では、サウィン祭の期間中のみ許された特別な行為は?",
-        "explanation": "正解:負債の支払い猶予と法的紛争の一時停止\n\nブレホン法(Brehon Laws)は古代アイルランドの法体系で、サウィン祭の期間(通常3日間)は特別な「休戦期間」とされました。この期間中は負債の取り立てが禁止され、法的紛争は一時停止され、敵対する部族間でも暴力行為が禁じられました。これは新年の始まりとして社会全体をリセットし、コミュニティの調和を回復する意味がありました。また、王や貴族は民衆に食事を振る舞う義務があり、社会階層を超えた交流が奨励されました。",
+        "question_text": "「Trick or Treat」という言葉が印刷物に初めて登場したのは何年?",
+        "explanation": "正解:1917年\n\n「Trick or Treat」という言葉が印刷物に初めて登場したのは、1917年11月1日のカナダ・オンタリオ州スー・セント・マリーのThe Sault Daily Starです。記事には「『Tricks or treats』と集団が叫ぶのが聞こえ」と記されています。語源学者バリー・ポピックがデジタル化された新聞データベースを通じてこの最古の記録を発見しました。その後1920年代から1930年代にかけてカナダ中部から米国へと広がっていきました。\n\n参考:\nhttps://en.wikipedia.org/wiki/Trick-or-treating\nhttps://www.britannica.com/video/249393/hisstory-of-trick-or-treat-Halloween",
         "choices": [
           {
-            "choice_text": "重婚",
+            "choice_text": "1895年",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "負債の支払い猶予と法的紛争の一時停止",
+            "choice_text": "1917年",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "窃盗",
+            "choice_text": "1932年",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "王位への挑戦",
+            "choice_text": "1951年",
             "is_correct": false,
             "choice_order": 4
           }
@@ -1088,26 +1088,26 @@
       },
       {
         "id": "q040",
-        "question_text": "1970年代にアメリカで起きた、ハロウィン文化に大きな影響を与えた「レーズン事件」の正式名称は?",
-        "explanation": "正解:「ピクシースティック殺人事件」(The Candy Man Murders)\n\n1974年テキサス州で起きた「ピクシースティック殺人事件」は、ロナルド・クラーク・オブライアンが息子を保険金目的で青酸カリ入りのキャンディで毒殺した事件です。この事件は「毒入りハロウィンキャンディ」の都市伝説を現実化させ、全米のハロウィンの祝い方を一変させました。以降、病院でのX線検査、学校でのハロウィンパーティー、包装されたキャンディのみを受け取るなどの安全対策が広まりました。皮肉なことに、見知らぬ人からの危険よりも、この事件のように家族内の犯罪の方が実際には多いのですが、この事件がハロウィンの「安全神話」を崩壊させたことは確かです。",
+        "question_text": "社会学者ジョエル・ベストが1985年に発表した研究で明らかにしたハロウィンの「毒入りキャンディ」に関する結論は?",
+        "explanation": "正解:見知らぬ人による毒殺で子供が死亡した実証された事例はない\n\nデラウェア大学のジョエル・ベスト教授は1985年の画期的な研究で、1958年から1984年までの主要な米国新聞を調査し、「トリック・オア・トリーティングの過程で拾った汚染された菓子によって子供が殺されたり重傷を負ったりした実証された報告を見つけることができませんでした」と結論づけました。1974年のテキサス州の事件も、実際には父親ロナルド・クラーク・オブライアンが保険金目的で息子を毒殺したもので、見知らぬ人による犯行ではありませんでした。ハロウィン・サディズムは都市伝説であることが証明されました。\n\n参考:\nhttps://en.wikipedia.org/wiki/Trick-or-treating\nhttps://www.history.com/articles/history-of-halloween",
         "choices": [
           {
-            "choice_text": "タイレノール事件",
+            "choice_text": "毎年数十件の毒入りキャンディ事件が確認された",
             "is_correct": false,
             "choice_order": 1
           },
           {
-            "choice_text": "ピクシースティック殺人事件",
+            "choice_text": "見知らぬ人による毒殺で子供が死亡した実証された事例はない",
             "is_correct": true,
             "choice_order": 2
           },
           {
-            "choice_text": "キャンディマン連続殺人事件",
+            "choice_text": "1970年代に毒入りキャンディによる死亡事故が急増した",
             "is_correct": false,
             "choice_order": 3
           },
           {
-            "choice_text": "ハロウィン・ストレンジャー事件",
+            "choice_text": "外国製のキャンディに限定して毒物混入が確認された",
             "is_correct": false,
             "choice_order": 4
           }

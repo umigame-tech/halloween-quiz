@@ -147,6 +147,9 @@ const result = await Bun.build({
   },
 });
 
+// src/ogp-image.jpg を dist/ogp-image.jpg にコピー
+await cp("src/ogp-image.jpg", path.join(outdir, "ogp-image.jpg"));
+
 const end = performance.now();
 
 const outputTable = result.outputs.map((output) => ({

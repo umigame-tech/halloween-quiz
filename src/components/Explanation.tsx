@@ -102,8 +102,19 @@ export function Explanation() {
 
     window.addEventListener("popstate", handlePopState);
 
+    // Prevent body scroll on iOS
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.height = "100vh";
+
     return () => {
       window.removeEventListener("popstate", handlePopState);
+      // Restore body scroll
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.height = "";
     };
   }, []);
 
@@ -204,9 +215,11 @@ export function Explanation() {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col px-4 py-6 text-white"
+      className="relative flex flex-col px-4 py-6 text-white"
       style={{
         backgroundColor: "#191022",
+        height: "100vh",
+        overflow: "hidden",
       }}
     >
       <div className="absolute top-4 left-4 z-10">

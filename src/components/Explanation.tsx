@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import seedData from "../../db/seed-data.json";
 import halloweenBg from "../halloween_bg.webp";
 import { useNavigate } from "../hooks/useNavigate";
@@ -37,6 +37,9 @@ export function Explanation() {
   const [quizGroup, setQuizGroup] = useState<QuizGroup | null>(null);
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
   const [isExpanded, setIsExpanded] = useState(true);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const bottomSheetRef = useRef<HTMLDivElement>(null);
 
   // Convert URLs in text to clickable links
   const renderTextWithLinks = (text: string) => {
@@ -133,6 +136,60 @@ export function Explanation() {
     setIsExpanded(!isExpanded);
   };
 
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
+
+  // Set up native touch event listeners to prevent scroll
+  useEffect(() => {
+    const element = bottomSheetRef.current;
+    if (!element) return;
+
+    let startY: number | null = null;
+    let endY: number | null = null;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      endY = null;
+      startY = e.touches[0].clientY;
+      setTouchStart(startY);
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      // Prevent default to stop background scrolling
+      e.preventDefault();
+      endY = e.touches[0].clientY;
+      setTouchEnd(endY);
+    };
+
+    const handleTouchEnd = () => {
+      if (!startY || !endY) return;
+
+      const distance = startY - endY;
+      const isUpSwipe = distance > minSwipeDistance;
+      const isDownSwipe = distance < -minSwipeDistance;
+
+      if (isUpSwipe && !isExpanded) {
+        setIsExpanded(true);
+      } else if (isDownSwipe && isExpanded) {
+        setIsExpanded(false);
+      }
+
+      startY = null;
+      endY = null;
+    };
+
+    element.addEventListener("touchstart", handleTouchStart, {
+      passive: false,
+    });
+    element.addEventListener("touchmove", handleTouchMove, { passive: false });
+    element.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      element.removeEventListener("touchstart", handleTouchStart);
+      element.removeEventListener("touchmove", handleTouchMove);
+      element.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [isExpanded, minSwipeDistance]);
+
   if (!quizGroup) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#191022]">
@@ -226,6 +283,7 @@ export function Explanation() {
 
       {/* Bottom sheet */}
       <div
+        ref={bottomSheetRef}
         className="fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col z-30 overflow-hidden"
         style={{
           maxHeight: isExpanded ? "60vh" : "180px",

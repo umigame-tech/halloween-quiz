@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import seedData from "../../db/seed-data.json";
-import halloweenResultBg from "../halloween_result.png";
+import halloweenResultBg from "../halloween_result.webp";
 
 interface QuizGroup {
   group: {

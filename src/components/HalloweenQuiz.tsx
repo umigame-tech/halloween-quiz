@@ -1,4 +1,4 @@
-import halloweenBg from "../halloween_bg.png";
+import halloweenBg from "../halloween_bg.webp";
 
 export function HalloweenQuiz() {
   return (

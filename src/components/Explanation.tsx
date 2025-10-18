@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import seedData from "../../db/seed-data.json";
-import halloweenBg from "../halloween_bg.png";
+import halloweenBg from "../halloween_bg.webp";
 
 interface Question {
   id: string;

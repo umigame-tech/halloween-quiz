@@ -260,7 +260,7 @@ export function Explanation() {
         </div>
       </div>
 
-      <div className="relative flex-grow flex flex-col justify-center items-center text-center">
+      <div className="relative flex-grow flex flex-col mt-12 justify-start items-center text-center">
         <div className="w-full max-w-md">
           <div className="mb-4">
             <span className="bg-purple-600 text-sm font-bold px-4 py-1 rounded-full">
@@ -329,7 +329,7 @@ export function Explanation() {
         tabIndex={0}
         className="fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col z-30 overflow-hidden"
         style={{
-          maxHeight: isExpanded ? "60vh" : "180px",
+          maxHeight: isExpanded ? "60vh" : "80px",
           transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
           outline: "none",
         }}

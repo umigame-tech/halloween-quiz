@@ -44,11 +44,9 @@ export function Quiz() {
       const group = (seedData as QuizGroup[]).find((g) => g.group.id === id);
       if (group) {
         setQuizGroup(group);
-        // Load saved answers if any
-        const savedAnswers = sessionStorage.getItem(`quiz_${id}`);
-        if (savedAnswers) {
-          setAnswers(JSON.parse(savedAnswers));
-        }
+        // Clear any existing session for this quiz to start fresh
+        sessionStorage.removeItem(`quiz_${id}`);
+        setAnswers([]);
       }
     }
   }, []);

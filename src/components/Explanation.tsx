@@ -40,6 +40,7 @@ export function Explanation() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const bottomSheetRef = useRef<HTMLDivElement>(null);
+  const mainContainerRef = useRef<HTMLDivElement>(null);
 
   // Convert URLs in text to clickable links
   const renderTextWithLinks = (text: string) => {
@@ -108,6 +109,13 @@ export function Explanation() {
     document.body.style.width = "100%";
     document.body.style.height = "100vh";
 
+    // Focus on bottom sheet after a short delay to ensure it's rendered
+    setTimeout(() => {
+      if (bottomSheetRef.current) {
+        bottomSheetRef.current.focus();
+      }
+    }, 100);
+
     return () => {
       window.removeEventListener("popstate", handlePopState);
       // Restore body scroll
@@ -149,6 +157,25 @@ export function Explanation() {
 
   // Minimum swipe distance (in px)
   const minSwipeDistance = 50;
+
+  // Prevent pull-to-refresh on main container
+  useEffect(() => {
+    const mainContainer = mainContainerRef.current;
+    if (!mainContainer) return;
+
+    const preventPullToRefresh = (e: TouchEvent) => {
+      // Prevent pull-to-refresh by stopping default touch behavior
+      e.preventDefault();
+    };
+
+    mainContainer.addEventListener("touchmove", preventPullToRefresh, {
+      passive: false,
+    });
+
+    return () => {
+      mainContainer.removeEventListener("touchmove", preventPullToRefresh);
+    };
+  }, []);
 
   // Set up native touch event listeners to prevent scroll
   useEffect(() => {
@@ -215,11 +242,13 @@ export function Explanation() {
 
   return (
     <div
+      ref={mainContainerRef}
       className="relative flex flex-col px-4 py-6 text-white"
       style={{
         backgroundColor: "#191022",
         height: "100vh",
         overflow: "hidden",
+        touchAction: "none",
       }}
     >
       <div className="absolute top-4 left-4 z-10">
@@ -297,10 +326,12 @@ export function Explanation() {
       {/* Bottom sheet */}
       <div
         ref={bottomSheetRef}
+        tabIndex={0}
         className="fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col z-30 overflow-hidden"
         style={{
           maxHeight: isExpanded ? "60vh" : "180px",
           transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+          outline: "none",
         }}
       >
         <div

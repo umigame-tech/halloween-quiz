@@ -1,6 +1,6 @@
 {
   "name": "bun-react-quiz-app",
-  "main": "dist/index.js",
+  "main": "src/worker.ts",
   "compatibility_date": "2025-01-01",
   "compatibility_flags": ["nodejs_compat"],
 

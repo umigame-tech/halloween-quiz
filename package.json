@@ -9,7 +9,10 @@
     "build": "bun run build.ts",
     "db:init": "bun db/init.ts",
     "db:seed": "bun db/seed.ts",
-    "db:reset": "rm -f quiz.db && bun db/init.ts && bun db/seed.ts"
+    "db:reset": "rm -f quiz.db && bun db/init.ts && bun db/seed.ts",
+    "deploy": "bun run build && bunx wrangler deploy",
+    "deploy:dev": "bunx wrangler dev",
+    "cf:login": "bunx wrangler login"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",

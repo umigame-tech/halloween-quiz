@@ -1,29 +1,42 @@
 @import "../styles/globals.css";
 
 @layer base {
-    :root {
-        @apply font-sans;
-    }
+  :root {
+    @apply font-sans;
+  }
 
-    body {
-        @apply min-w-[320px] m-0;
-        /*min-height: max(884px, 100dvh);*/
-    }
+  body {
+    @apply min-w-[320px] m-0;
+    /*min-height: max(884px, 100dvh);*/
+  }
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 @media (prefers-reduced-motion) {
-    *,
-    ::before,
-    ::after {
-        animation: none !important;
-    }
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+  }
 }

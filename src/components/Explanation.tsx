@@ -226,9 +226,11 @@ export function Explanation() {
 
       {/* Bottom sheet */}
       <div
-        className={`fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col transition-all duration-300 z-30 ${
-          isExpanded ? "h-3/5" : "h-auto"
-        }`}
+        className="fixed bottom-0 left-0 right-0 bg-[#2a1a3e] rounded-t-3xl pb-6 px-6 flex flex-col z-30 overflow-hidden"
+        style={{
+          maxHeight: isExpanded ? "60vh" : "180px",
+          transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+        }}
       >
         <div
           className="flex items-center mb-4 cursor-pointer pt-6"
@@ -258,9 +260,17 @@ export function Explanation() {
           </span>
         </div>
 
-        {isExpanded && (
+        <div
+          style={{
+            flexGrow: isExpanded ? 1 : 0,
+            opacity: isExpanded ? 1 : 0,
+            overflow: "hidden",
+            transition:
+              "flex-grow 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
+        >
           <div
-            className="flex-grow overflow-y-auto pr-2"
+            className="overflow-y-auto pr-2"
             style={{
               msOverflowStyle: "none",
               scrollbarWidth: "none",
@@ -271,11 +281,9 @@ export function Explanation() {
               {renderTextWithLinks(currentQuestion.explanation)}
             </p>
           </div>
-        )}
+        </div>
 
-        <div
-          className={`${isExpanded ? "mt-4 pt-4 border-t border-gray-600" : "mt-0"}`}
-        >
+        <div className="mt-4 pt-4 border-t border-gray-600">
           <button
             onClick={handleNext}
             className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-lg cursor-pointer"

@@ -41,6 +41,8 @@ export function Explanation() {
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const bottomSheetRef = useRef<HTMLDivElement>(null);
   const mainContainerRef = useRef<HTMLDivElement>(null);
+  const explanationContentRef = useRef<HTMLDivElement>(null);
+  const bottomSheetHeaderRef = useRef<HTMLDivElement>(null);
 
   // Convert URLs in text to clickable links
   const renderTextWithLinks = (text: string) => {
@@ -177,10 +179,10 @@ export function Explanation() {
     };
   }, []);
 
-  // Set up native touch event listeners to prevent scroll
+  // Set up native touch event listeners for swipe on header only
   useEffect(() => {
-    const element = bottomSheetRef.current;
-    if (!element) return;
+    const headerElement = bottomSheetHeaderRef.current;
+    if (!headerElement) return;
 
     let startY: number | null = null;
     let endY: number | null = null;
@@ -192,7 +194,7 @@ export function Explanation() {
     };
 
     const handleTouchMove = (e: TouchEvent) => {
-      // Prevent default to stop background scrolling
+      // Prevent default to stop background scrolling on header only
       e.preventDefault();
       endY = e.touches[0].clientY;
       setTouchEnd(endY);
@@ -215,18 +217,39 @@ export function Explanation() {
       endY = null;
     };
 
-    element.addEventListener("touchstart", handleTouchStart, {
+    headerElement.addEventListener("touchstart", handleTouchStart, {
       passive: false,
     });
-    element.addEventListener("touchmove", handleTouchMove, { passive: false });
-    element.addEventListener("touchend", handleTouchEnd);
+    headerElement.addEventListener("touchmove", handleTouchMove, {
+      passive: false,
+    });
+    headerElement.addEventListener("touchend", handleTouchEnd);
 
     return () => {
-      element.removeEventListener("touchstart", handleTouchStart);
-      element.removeEventListener("touchmove", handleTouchMove);
-      element.removeEventListener("touchend", handleTouchEnd);
+      headerElement.removeEventListener("touchstart", handleTouchStart);
+      headerElement.removeEventListener("touchmove", handleTouchMove);
+      headerElement.removeEventListener("touchend", handleTouchEnd);
     };
   }, [isExpanded, minSwipeDistance]);
+
+  // Allow scrolling in explanation content area
+  useEffect(() => {
+    const contentElement = explanationContentRef.current;
+    if (!contentElement) return;
+
+    const handleTouchMove = (e: TouchEvent) => {
+      // Allow scrolling by not preventing default
+      e.stopPropagation();
+    };
+
+    contentElement.addEventListener("touchmove", handleTouchMove, {
+      passive: true,
+    });
+
+    return () => {
+      contentElement.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
 
   if (!quizGroup) {
     return (
@@ -335,6 +358,7 @@ export function Explanation() {
         }}
       >
         <div
+          ref={bottomSheetHeaderRef}
           className="flex items-center mb-4 cursor-pointer pt-6"
           onClick={(e) => {
             e.preventDefault();
@@ -366,16 +390,18 @@ export function Explanation() {
           style={{
             flexGrow: isExpanded ? 1 : 0,
             opacity: isExpanded ? 1 : 0,
-            overflow: "hidden",
+            overflow: isExpanded ? "auto" : "hidden",
             transition:
               "flex-grow 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
         >
           <div
-            className="overflow-y-auto pr-2"
+            ref={explanationContentRef}
+            className="overflow-y-auto pr-2 h-full"
             style={{
               msOverflowStyle: "none",
               scrollbarWidth: "none",
+              WebkitOverflowScrolling: "touch",
             }}
           >
             <h2 className="text-xl font-bold mb-2">解説</h2>

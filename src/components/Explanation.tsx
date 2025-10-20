@@ -334,6 +334,12 @@ export function Explanation() {
                   </button>
                 );
               })}
+            <button
+              onClick={handleNext}
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold mt-8 py-3 px-4 rounded-lg text-lg cursor-pointer"
+            >
+              次の問題へ
+            </button>
           </div>
         </div>
       </div>
